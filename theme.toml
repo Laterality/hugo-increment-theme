@@ -1,0 +1,16 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Hugo Increment Theme"
+license = "MIT"
+licenselink = "https://github.com/Laterality/hugo-increment-theme/blob/master/LICENSE"
+description = ""
+homepage = "https://www.latera.kr"
+tags = []
+features = []
+min_version = "0.53"
+
+[author]
+  name = "Laterality"
+  homepage = "https://www.latera.kr"
+  
