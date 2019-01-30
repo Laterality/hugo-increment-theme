@@ -1,0 +1,90 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-container {
+    width: 25%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo {
+    width: 128px;
+    height: 128px;
+}
+
+.side-title {
+    font-size: 2.2rem;
+}
+
+.side-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-menu-item {
+    display: block;
+    color: #1e1e1e;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.side-menu-item:hover {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.contact-icon:hover {
+    fill: #b4b4b4;
+}
+
+#content {
+    width: 75%;
+    float: left;
+}
+
+.summary-anchor {
+    color: #000;
+}
+
+.summary-date {
+    color: #787878;
+}
+
+.summary-anchor:hover {
+    text-decoration: none;
+    color: #b4b4b4;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.pagination-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pagination-anchor {
+    color: #1e1e1e;
+    font-weight: bold;
+    transition-duration: 250ms;
+}
+
+.pagination-anchor:hover {
+    text-decoration: none;
+    color: #505050;
+}
