@@ -1,4 +1,4 @@
-.container {
+.site-container {
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -87,4 +87,12 @@
 .pagination-anchor:hover {
     text-decoration: none;
     color: #505050;
+}
+
+.post-icon-small {
+    height: 1.2rem;
+}
+
+code {
+    word-break: normal;
 }
