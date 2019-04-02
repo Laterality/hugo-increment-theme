@@ -1,6 +1,6 @@
-<article>
+<article class="summary-item">
     <a href="{{ .URL }}" class="summary-anchor"><h1>{{ .Title }}</h1></a>
-    <h6 class="summary-date">{{ .Date.Format "2006.01.02" }}</h6>
+    <div class="summary-date">{{ .Date.Format "2006.01.02" }}</div>
     <p>{{ .Summary }}</p>
 </article>
 <hr>

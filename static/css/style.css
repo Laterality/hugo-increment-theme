@@ -1,5 +1,60 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* //RESET */
+
+code {
+    word-break: normal;
+}
+
 .site-container {
     max-width: 1400px;
+    min-width: 768px;
     margin: 0 auto;
 }
 
@@ -18,6 +73,8 @@
 
 .side-title {
     font-size: 2.2rem;
+    margin: .5rem 0;
+    font-weight: bold;
 }
 
 .side-menu-wrapper {
@@ -28,9 +85,11 @@
 
 .side-menu-item {
     display: block;
+    margin: .4rem 0;
     color: #1e1e1e;
     font-weight: bold;
     font-size: 1.3rem;
+    text-align: center;
     transition-duration: 250ms;
     transition-timing-function: ease;
 }
@@ -38,6 +97,21 @@
 .side-menu-item:hover {
     text-decoration: none;
     color: #b4b4b4;
+}
+
+.side-submenu-item {
+    display: block;
+    color: #5e5e5e;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.side-submenu-item:hover {
+    text-decoration: none;
+    color: #8c8c8c;
 }
 
 .contact-icon {
@@ -57,12 +131,28 @@
     float: left;
 }
 
-.summary-anchor {
-    color: #000;
+#content:after {
+    content: "";
+    clear: both;
 }
 
-.summary-date {
+.summary-item .summary-anchor {
+    color: #000;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.summary-item .summary-date {
     color: #787878;
+    margin-bottom: 1rem;
+}
+
+.summary-item p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 .summary-anchor:hover {
@@ -78,21 +168,42 @@
     justify-content: space-around;
 }
 
-.pagination-anchor {
-    color: #1e1e1e;
-    font-weight: bold;
-    transition-duration: 250ms;
-}
-
-.pagination-anchor:hover {
-    text-decoration: none;
-    color: #505050;
-}
-
 .post-icon-small {
     height: 1.2rem;
 }
 
-code {
-    word-break: normal;
+.site-footer {
+    width: 100%;
+    clear: both;
+    padding: 20px 0;
+}
+
+.copyright-phrase {
+    color: #8d8d8d;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.navigate-anchor {
+    color: #90a4ae;
+    font-size: 1.2rem;
+}
+
+.navigate-anchor:hover {
+    color: #000;
+    transition: 500ms;
+}
+
+.article-title {
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    display: block;
+}
+
+.article-date {
+    color: #787878;
+    margin-bottom: 1rem;
 }

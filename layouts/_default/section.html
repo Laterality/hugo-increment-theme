@@ -8,12 +8,12 @@
         {{ end }}
         <div class="pagination-wrap">
             {{ if $paginator.HasPrev }}
-                <a href="{{ $paginator.Prev.URL }}">≪ PREV</a>
+                <a href="{{ $paginator.Prev.URL }}" class="navigate-anchor">≪ PREV</a>
             {{ else }}
                 <div></div>
             {{ end }}
             {{ if $paginator.HasNext }}
-                <a href="{{ $paginator.Next.URL }}">Next ≫</a>
+                <a href="{{ $paginator.Next.URL }}" class="navigate-anchor">Next ≫</a>
             {{ else }}
                 <div></div>
             {{ end }}
