@@ -11,7 +11,7 @@
                 {{ if .HasChildren }}
                 <ul>
                     {{ range .Children }}
-                    <li><a href="{{ .URL | absURL }}" class="side-submenu-item">{{ .Title }}</a></li>
+                    <li class="side-submenu-item"><a href="{{ .URL | absURL }}" >{{ .Title }}</a></li>
                     {{ end }}
                 </ul>
                 {{ end }}
